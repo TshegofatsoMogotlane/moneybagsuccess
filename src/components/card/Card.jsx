@@ -2,8 +2,9 @@ import React from "react";
 import { CardWrapper } from "./Card.styled";
 import Gallery from "../../assets/Gallery.JPG"
 import  BookingCard from "../../assets/BookingCard.JPG"
-import AUs from "../../assets/AUs.jpg"
+// import AUs from "../../assets/AUs.jpg"
 import Connect from "../../assets/WhatsApp Image 2024-09-23 at 01.46.08.jpeg"
+import BCard from "../../assets/IMG-20240504-WA0005.jpg"
 
 // const Card = ({ src, title, description }) => {
 //   return (
@@ -21,7 +22,7 @@ import Connect from "../../assets/WhatsApp Image 2024-09-23 at 01.46.08.jpeg"
 export const Card3 = () => {
     return (
       <CardWrapper>
-        <img className="card" src={AUs} alt="" />
+        <img className="card" src={BCard} alt="" />
         <div className="card_info" >
           <h2>About Our Studio</h2>
           <h4>Learn more about our team, our story, and what makes us stand out in
