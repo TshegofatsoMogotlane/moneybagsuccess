@@ -6,6 +6,7 @@ export const lightTheme = {
   
       default: "#FF2329",
       brics_empire: "#FFF0F0",
+      cardColor:"#B22222",
   
       red: "#FF2329",
       blue: "#0030f3",
@@ -42,6 +43,7 @@ export const lightTheme = {
   
       default: "#ff7779",
       brics_empire: "#fef4b1",
+      cardColor:"#3D3D3D",
   
       red: "#FF2329",
       blue: "#0030f3",

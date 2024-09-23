@@ -63,12 +63,13 @@ export const HeaderWrapper = styled.div`
     }
 
     .header_center {
-      max-width: 80%;
+      max-width:32px;
       padding: 1rem;
     }
 
     .header_center > input {
       font-size: 0.9rem;
+      width:20px;
     }
 
     .header_center > svg {

@@ -10,6 +10,14 @@ export const Container = styled.div`
   padding: 1rem; 
   text-align: center;
   margin-bottom: 10px; 
+
+  @media (max-width: 768px){
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `;
 
 
