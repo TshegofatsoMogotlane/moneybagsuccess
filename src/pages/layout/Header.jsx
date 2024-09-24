@@ -2,18 +2,29 @@ import React, { useContext } from "react";
 import { DarkModeIcon, HeaderWrapper, LightModeIcon, SearchIcon } from "./Header.styled";
 import Logo from "../../assets/Logo.jpg";
 import { ThemeContext } from "../../context/ThemeContext";
-import Login from "../../components/login/Login";
+import { useNavigate } from "react-router-dom";
+// import Login from "../../components/login/Login";
 
 
 const Header = () => {
-  const {theme, toggleTheme} = useContext(ThemeContext)
+  const {theme, toggleTheme} = useContext(ThemeContext);
+  const navigate = useNavigate()
   return (
     <HeaderWrapper>
-      <img className="logo" src={Logo} alt="brics-logo" />
-      <div className="header_center">
-        <input type="text" />
-        <SearchIcon />
+      <div className="on-web">
+        <img className="logo" src={Logo} alt="brics-logo" onClick={()=>navigate("/")}/>
+        <div className="header_center">
+          <input type="text" />
+          <SearchIcon />
+        </div>
+        <span onClick={()=>toggleTheme()}>{theme==="light"?<DarkModeIcon/>:<LightModeIcon/>}</span>
       </div>
+
+      <div className="on-mobile">
+        <img className="logo" src={Logo} alt="brics-logo" />
+        <span onClick={()=>toggleTheme()}>{theme==="light"?<DarkModeIcon/>:<LightModeIcon/>}</span>
+      </div>
+      
       {/* <div className="dropdown">
         <ExpandMoreIcon className="dropdownbtn" />
         <div className="dropdown-content">
@@ -32,7 +43,7 @@ const Header = () => {
         </div>
       </div> */}
       {/* <Login /> */}
-      <span onClick={()=>toggleTheme()}>{theme==="light"?<DarkModeIcon/>:<LightModeIcon/>}</span>
+      
     </HeaderWrapper>
   );
 };

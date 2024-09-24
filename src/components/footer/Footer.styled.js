@@ -11,6 +11,7 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   position: relative;
   margin-top: 20px;
+  
   @media (max-width: 768px) {
     padding: 15px;
 
@@ -31,7 +32,7 @@ export const FooterWrapper = styled.footer`
     }
 
     .social-icons a {
-      font-size: 18px; /* Even smaller for very small screens */
+      font-size: 18px; 
     }
   }
 `;

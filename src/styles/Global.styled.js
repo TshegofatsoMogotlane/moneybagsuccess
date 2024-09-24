@@ -6,5 +6,6 @@ export const GlobalStyles =  createGlobalStyle`
         padding:0;
         box-sizing:border-box;
         background-color:${(props)=>props.theme.colors.primary};
+        ${'' /* background-color:transparent; */}
     }
 `

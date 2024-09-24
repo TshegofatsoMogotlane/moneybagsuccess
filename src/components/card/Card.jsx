@@ -5,6 +5,7 @@ import  BookingCard from "../../assets/BookingCard.JPG"
 // import AUs from "../../assets/AUs.jpg"
 import Connect from "../../assets/WhatsApp Image 2024-09-23 at 01.46.08.jpeg"
 import BCard from "../../assets/IMG-20240504-WA0005.jpg"
+import { useNavigate } from "react-router-dom";
 
 // const Card = ({ src, title, description }) => {
 //   return (
@@ -20,8 +21,9 @@ import BCard from "../../assets/IMG-20240504-WA0005.jpg"
 
 // export default Card;
 export const Card3 = () => {
+    const navigate= useNavigate()
     return (
-      <CardWrapper>
+      <CardWrapper onClick={()=>navigate("/about-us")}>
         <img className="card" src={BCard} alt="" />
         <div className="card_info" >
           <h2>About Our Studio</h2>
@@ -34,8 +36,9 @@ export const Card3 = () => {
   };
   
   export const Card = () => {
+    const navigate= useNavigate()
     return (
-      <CardWrapper>
+      <CardWrapper onClick={()=>navigate("/brics-gallery")}>
         <img className="card" src={Gallery} alt="" />
         <div className="card_info" >
           <h2>Explore Our Gallery</h2>
@@ -48,8 +51,9 @@ export const Card3 = () => {
   };
 
   export const Card2 = () => {
+    const navigate= useNavigate()
     return (
-      <CardWrapper>
+      <CardWrapper onClick={()=>navigate("/booking-section")}>
         <img className="card" src={BookingCard} alt="" />
         <div className="card_info" >
           <h2>Book Your Photoshoot</h2>
@@ -62,8 +66,9 @@ export const Card3 = () => {
   };
 
   export const Card4 = () => {
+    const navigate= useNavigate()
     return (
-      <CardWrapper>
+      <CardWrapper onClick={()=>navigate("/connect-with-us")}>
         <img className="card" src={Connect} alt="" />
         <div className="card_info" >
           <h2>Connect With Us</h2>

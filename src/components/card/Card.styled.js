@@ -28,6 +28,11 @@ export const CardWrapper = styled.div`
     font-size: 18px;
     font-weight: 600;
   }
+  .card_info > h3 {
+    background-color:${(props)=>props.theme.colors.cardColor};
+    font-size: 16px;
+    font-weight: 450;
+  }
   .card_info > h4 {
     background-color:${(props)=>props.theme.colors.cardColor};
     font-size: 14px;
